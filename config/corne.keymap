@@ -13,7 +13,10 @@
         screenCapture: screenCapture {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>,
+                <&macro_release>;
 
             label = "SCREENCAPTURE";
         };
@@ -21,7 +24,7 @@
         windows_run: windows_run {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_WIN &kp R>;
+            bindings = <&macro_press>, <&kp LEFT_WIN &kp R>, <&macro_release>;
 
             label = "WINDOWS_RUN";
         };
@@ -36,8 +39,25 @@
         key_binding_check: key_binding_check {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp N &kp I &kp C &kp K &kp C &kp O &kp U &kp T &kp S &kp O &kp S &kp DOT &kp G &kp I &kp T &kp H &kp U &kp B &kp DOT &kp I &kp O &kp FSLH &kp K &kp E &kp Y &kp M &kp A &kp P &kp MINUS &kp E &kp D &kp I &kp T &kp O &kp R &kp FSLH>;
+            bindings =
+                <&none &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp N &kp I &kp C &kp K &kp C &kp O &kp U &kp T &kp S &kp O &kp S &kp DOT &kp G &kp I &kp T &kp H &kp U &kp B>,
+                <&macro_release>;
+
             label = "KEY_BINDING_CHECK";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&key_binding_check &new_macron>;
+            label = "NEW_MACRO";
+        };
+
+        new_macron: new_macron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp DOT &kp I &kp O &kp FSLH &kp K &kp E &kp Y &kp M &kp A &kp P &kp MINUS &kp E &kp D &kp I &kp T &kp O &kp R &kp FSLH>;
+            label = "NEW_MACRON";
         };
     };
 
@@ -118,7 +138,7 @@
 
         macro_layer {
             bindings = <
-&to 0   &trans  &trans        &trans          &trans  &trans    &trans  &display_set  &trans  &trans  &trans  &key_binding_check
+&to 0   &trans  &trans        &trans          &trans  &trans    &trans  &display_set  &trans  &trans  &trans  &new_macro
 &trans  &trans  &windows_run  &screenCapture  &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans          &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans
                               &trans          &to 5   &trans    &trans  &trans        &trans
