@@ -182,10 +182,10 @@
 
         nav_layer {
             bindings = <
-&to 0   &trans      &trans            &trans          &trans            &trans        &trans             &trans             &kp UP_ARROW    &trans           &trans  &kp HOME
-&trans  &trans      &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT      &trans        &trans             &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp END
-&trans  &control_x  &control_c        &none           &control_shift_v  &control_z    &trans             &trans             &trans          &trans           &trans  &trans
-                                      &kp LEFT_WIN    &to 4             &trans        &kp RIGHT_CONTROL  &kp RIGHT_CONTROL  &trans
+&to 0   &trans      &trans            &trans          &trans        &trans    &trans             &trans             &kp UP_ARROW    &trans           &trans  &kp HOME
+&trans  &trans      &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans    &trans             &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp END
+&trans  &control_x  &control_c        &none           &trans        &trans    &trans             &trans             &trans          &trans           &trans  &trans
+                                      &kp LEFT_WIN    &to 4         &trans    &kp RIGHT_CONTROL  &kp RIGHT_CONTROL  &trans
             >;
         };
     };
