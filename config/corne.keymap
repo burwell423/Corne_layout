@@ -148,7 +148,7 @@
             bindings = <
 &to 0      &kp EXCL         &kp LESS_THAN  &kp GREATER_THAN  &kp DLLR   &kp PRCNT        &kp CARET    &kp EXCLAMATION  &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp DELETE        &kp BACKSPACE
 &kp LCTRL  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL  &kp AMPERSAND    &kp AT_SIGN  &kp PIPE         &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp BSLH          &kp SEMICOLON
-&kp LSHFT  &trans           &kp SLASH      &kp ASTERISK      &trans     &kp END          &kp UNDER    &kp QUESTION     &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp SINGLE_QUOTE  &kp ENTER
+&kp LSHFT  &trans           &kp SLASH      &kp ASTERISK      &kp TILDE  &kp END          &kp UNDER    &kp QUESTION     &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp SINGLE_QUOTE  &kp ENTER
                                            &kp LGUI          &to 4      &kp ENTER        &kp SPACE    &trans           &kp RALT
             >;
         };
