@@ -116,10 +116,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp F     &kp P  &kp B         &kp J      &kp L              &kp U      &kp Y    &kp DELETE  &kp BSPC
-&kp TAB         &kp A  &kp R  &kp S     &kp T  &kp G         &kp M      &kp N              &kp E      &kp I    &kp O       &kp SEMICOLON
-&kp LEFT_SHIFT  &kp X  &kp C  &kp D     &kp V  &kp Z         &kp K      &kp H              &kp COMMA  &kp DOT  &kp FSLH    &kp ENTER
-                              &kp LGUI  &to 4  &kp RETURN    &kp SPACE  &kp RIGHT_CONTROL  &kp RALT
+&kp ESCAPE      &kp Q  &kp W  &kp F             &kp P  &kp B         &kp J      &kp L             &kp U      &kp Y    &kp DELETE  &kp BSPC
+&kp TAB         &kp A  &kp R  &kp S             &kp T  &kp G         &kp M      &kp N             &kp E      &kp I    &kp O       &kp SEMICOLON
+&kp LEFT_SHIFT  &kp X  &kp C  &kp D             &kp V  &kp Z         &kp K      &kp H             &kp COMMA  &kp DOT  &kp FSLH    &kp ENTER
+                              &kp LEFT_CONTROL  &to 4  &kp RETURN    &kp SPACE  &kp LEFT_COMMAND  &kp RALT
             >;
         };
 
@@ -146,10 +146,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0      &kp EXCL         &kp LESS_THAN  &kp GREATER_THAN  &kp DLLR   &kp PRCNT        &kp CARET    &kp EXCLAMATION  &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp DELETE        &kp BACKSPACE
-&kp LCTRL  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL  &kp AMPERSAND    &kp AT_SIGN  &kp PIPE         &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp BSLH          &kp SEMICOLON
-&kp LSHFT  &trans           &kp SLASH      &kp ASTERISK      &kp GRAVE  &kp END          &kp UNDER    &kp QUESTION     &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp SINGLE_QUOTE  &kp ENTER
-                                           &kp LGUI          &to 4      &kp ENTER        &kp SPACE    &trans           &kp RALT
+&to 0      &kp EXCL         &kp LESS_THAN  &kp GREATER_THAN  &kp DLLR   &kp PRCNT        &kp CARET    &kp EXCLAMATION       &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp DELETE        &kp BACKSPACE
+&kp LCTRL  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL  &kp AMPERSAND    &kp AT_SIGN  &kp NON_US_BACKSLASH  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp GRAVE         &kp SEMICOLON
+&kp LSHFT  &trans           &kp SLASH      &kp ASTERISK      &kp GRAVE  &kp END          &kp UNDER    &kp QUESTION          &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp SINGLE_QUOTE  &kp ENTER
+                                           &kp LGUI          &to 4      &kp ENTER        &kp SPACE    &trans                &kp RALT
             >;
         };
 
