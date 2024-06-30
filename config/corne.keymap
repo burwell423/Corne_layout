@@ -107,18 +107,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+        layer_0 {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp F             &kp P  &kp B         &kp J      &kp L             &kp U      &kp Y    &kp DELETE  &kp BSPC
-&kp TAB         &kp A  &kp R  &kp S             &kp T  &kp G         &kp M      &kp N             &kp E      &kp I    &kp O       &kp SEMICOLON
-&kp LEFT_SHIFT  &kp X  &kp C  &kp D             &kp V  &kp Z         &kp K      &kp H             &kp COMMA  &kp DOT  &kp FSLH    &kp ENTER
-                              &kp LEFT_CONTROL  &to 0  &kp RETURN    &kp SPACE  &kp LEFT_COMMAND  &kp RALT
+&kp ESC    &kp Q  &kp W  &kp F      &kp P     &kp B        &kp J      &kp L     &kp U      &kp Y    &trans    &kp BSPC
+&kp TAB    &kp A  &kp R  &kp S      &kp T     &kp G        &kp M      &kp N     &kp E      &kp I    &kp O     &kp SEMI
+&kp LSHFT  &kp X  &kp C  &kp D      &kp V     &kp Z        &kp K      &kp H     &kp COMMA  &kp DOT  &kp FSLH  &trans
+                         &kp LCTRL  &kp LALT  &kp ENTER    &kp SPACE  &kp LGUI  &kp LALT
             >;
         };
     };
