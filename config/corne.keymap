@@ -131,10 +131,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0           &kp F1  &kp F2   &kp F3    &kp F4   &trans       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp DELETE  &kp BSPC
-&kp TAB         &kp F5  &kp F6   &kp F7    &kp F8   &trans       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH     &kp PLUS    &kp EQUAL
-&kp LEFT_SHIFT  &kp F9  &kp F10  &kp F11   &kp F12  &trans       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp MINUS   &kp ENTER
-                                 &kp LGUI  &to 4    &kp ENTER    &kp SPACE     &kp NUMBER_0  &kp RALT
+&to 0           &kp F1  &kp F2   &kp F3            &kp F4   &trans       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp DELETE  &kp BSPC
+&kp TAB         &kp F5  &kp F6   &kp F7            &kp F8   &trans       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH     &kp PLUS    &kp EQUAL
+&kp LEFT_SHIFT  &kp F9  &kp F10  &kp F11           &kp F12  &trans       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp MINUS   &kp ENTER
+                                 &kp LEFT_CONTROL  &to 4    &kp ENTER    &kp SPACE     &kp NUMBER_0  &kp RALT
             >;
         };
 
