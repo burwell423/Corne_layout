@@ -131,10 +131,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0           &kp F1  &kp F2   &kp F3            &kp F4   &trans       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp DELETE  &kp BSPC
-&kp TAB         &kp F5  &kp F6   &kp F7            &kp F8   &trans       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH     &kp PLUS    &kp EQUAL
-&kp LEFT_SHIFT  &kp F9  &kp F10  &kp F11           &kp F12  &trans       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp MINUS   &kp ENTER
-                                 &kp LEFT_CONTROL  &to 4    &kp ENTER    &kp SPACE     &kp NUMBER_0  &kp RALT
+&to 0           &kp F1  &kp F2   &kp F3            &kp F4   &trans          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp DELETE  &kp BSPC
+&kp TAB         &kp F5  &kp F6   &kp F7            &kp F8   &trans          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH     &kp PLUS    &kp EQUAL
+&kp LEFT_SHIFT  &kp F9  &kp F10  &kp F11           &kp F12  &kp LEFT_WIN    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp MINUS   &kp ENTER
+                                 &kp LEFT_CONTROL  &to 4    &kp ENTER       &kp SPACE     &kp NUMBER_0  &kp RALT
             >;
         };
 
@@ -146,10 +146,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0      &kp EXCL         &kp LESS_THAN  &kp GREATER_THAN  &kp DLLR   &kp PRCNT        &kp CARET    &kp EXCLAMATION       &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp DELETE        &kp BACKSPACE
-&kp LCTRL  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL  &kp AMPERSAND    &kp AT_SIGN  &kp NON_US_BACKSLASH  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp GRAVE         &kp SEMICOLON
-&kp LSHFT  &trans           &kp SLASH      &kp ASTERISK      &kp GRAVE  &kp END          &kp UNDER    &kp QUESTION          &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp SINGLE_QUOTE  &kp ENTER
-                                           &kp LGUI          &to 4      &kp ENTER        &kp SPACE    &trans                &kp RALT
+&to 0      &kp EXCL         &kp LESS_THAN  &kp GREATER_THAN  &kp DLLR   &kp PRCNT        &kp CARET    &kp EXCLAMATION  &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp DELETE        &kp BACKSPACE
+&kp LCTRL  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL  &kp AMPERSAND    &kp AT_SIGN  &kp PIPE         &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp GRAVE         &kp SEMICOLON
+&kp LSHFT  &kp BACKSLASH    &kp SLASH      &kp ASTERISK      &kp GRAVE  &kp END          &kp UNDER    &kp QUESTION     &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp SINGLE_QUOTE  &kp ENTER
+                                           &kp LEFT_CONTROL  &to 4      &kp ENTER        &kp SPACE    &kp LEFT_WIN     &kp RALT
             >;
         };
 
@@ -182,10 +182,10 @@
 
         nav_layer {
             bindings = <
-&to 0           &trans  &trans  &trans        &trans  &trans       &trans     &kp HOME           &kp UP_ARROW    &kp END          &kp DEL  &kp BACKSPACE
-&trans          &kp H   &kp J   &kp K         &kp L   &trans       &kp E      &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &kp END
-&kp LEFT_SHIFT  &kp X   &kp C   &none         &kp V   &kp Z        &trans     &trans             &trans          &trans           &trans   &trans
-                                &kp LEFT_WIN  &to 4   &kp ENTER    &kp SPACE  &kp RIGHT_CONTROL  &kp RIGHT_ALT
+&to 0           &trans  &trans  &trans            &trans  &trans       &trans     &kp HOME        &kp UP_ARROW    &kp END          &kp DEL  &kp BACKSPACE
+&trans          &trans  &trans  &trans            &trans  &trans       &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &kp END
+&kp LEFT_SHIFT  &kp X   &kp C   &none             &kp V   &kp Z        &trans     &trans          &trans          &trans           &trans   &trans
+                                &kp LEFT_CONTROL  &to 4   &kp ENTER    &kp SPACE  &kp LEFT_WIN    &kp RIGHT_ALT
             >;
         };
 
